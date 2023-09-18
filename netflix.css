@@ -1,0 +1,136 @@
+.card-container {
+  position: relative;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.body .background {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background: url("netflix background image.jpg.crdownload") no-repeat center
+    center fixed;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+  animation: myfirst 5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+.card-container img {
+  height: 150px;
+  background: none;
+  top: 10px;
+  margin-left: 80px;
+  margin-top: 10px;
+  color: red;
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background-color: red;
+  width: 80px;
+  border-radius: 6px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 80px;
+  margin-right: 80px;
+  margin-top: 40px;
+}
+.shows {
+  color: white;
+  gap: 40px;
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  justify-content: space-around;
+}
+.subscribe {
+  color: white;
+
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  justify-content: space-around;
+}
+.login-area {
+  display: flex;
+  flex-direction: row;
+
+  color: white;
+  position: absolute;
+  top: 310%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+
+  text-align: center;
+  justify-content: center;
+  font-weight: 900;
+
+  border: none;
+  box-sizing: border-box;
+  background: transparent;
+}
+.login-area .input {
+  margin: 5px;
+  border-radius: 3px;
+  padding: 5px 5px 0 0;
+  border-color: lightgray;
+  flex: 1;
+  font-size: 16px;
+  line-height: 16px;
+  min-width: 200px;
+}
+.login-area .start {
+  background-color: red;
+  border-radius: 6px;
+  border: none;
+  font-weight: 900;
+  font-size: 16px;
+  color: white;
+  flex: 2;
+}
+.start img {
+  height: 16px;
+  align-items: left;
+}
