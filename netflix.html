@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix</title>
+    <title>Netflix Kenya</title>
     <link rel="stylesheet" href="netflix.css" />
   </head>
-  <body
-    background="https://assets.nflxext.com/ffe/siteui/vlv3/dc1cf82d-97c9-409f-b7c8-6ac1718946d6/f5949139-65ec-4f52-afd0-04902b101312/KE-en-20230911-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
-  >
-    <div class="card-container">
+  <body>
+    <section class="card-container">
       <div class="header">
         <img src="netflix_header-removebg-preview.png" alt="netflix logo" />
       </div>
@@ -18,20 +16,123 @@
       <h1 class="shows">Unlimited movies, TV shows, and more</h1>
       <h2 class="subscribe">Watch anywhere. Cancel anytime</h2>
       <section class="login-area">
-        <form class="input">
-          <input
-            type="email"
-            name="email"
-            label="Email Address"
-            id="email"
-            required
-          />
-        </form>
+        <div>
+          <form class="input">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              value="Email Address"
+            />
+          </form>
+        </div>
 
         <div class="start">
           <span>Get Started <img src="chevron-forward-outline.svg" /></span>
         </div>
       </section>
-    </div>
+    </section>
+    <section class="enjoy-watching">
+      <div class="tv">
+        <div class="enjoy">
+          <h3>Enjoy on your TV</h3>
+          <p>
+            Watch on Smart TVs, Playstation, Xbox,<br />
+            Chromecast, Apple TV, Blu-ray players, and<br />
+            more.
+          </p>
+        </div>
+        <span><img src="enjoy watching.png" /></span>
+      </div>
+    </section>
+    <section class="mobile-watching">
+      <div class="mobile">
+        <span><img src="netflix mobile.jpg" /></span>
+        <div class="download">
+          <h3>
+            Download your shows<br />
+            to watch offline
+          </h3>
+          <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+      </div>
+    </section>
+    <section class="watch-everywhere">
+      <div class="devices">
+        <div class="all-devices">
+          <h3>Watch everywhere</h3>
+          <p>
+            Stream unlimited movies and TV shows on<br />
+            your phone, tablet, laptop, and TV.
+          </p>
+        </div>
+        <span><img src="watch everywhere.png" /></span>
+      </div>
+    </section>
+    <section class="netflix-kids">
+      <div class="kids">
+        <span><img src="netflix kids.png" /></span>
+        <div class="kids-adventure">
+          <h3>
+            Create profiles for<br />
+            kids
+          </h3>
+          <p>
+            Send kids on adventures with their favorite characters in a space
+            made just for them—free<br />
+            with your membership.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="frequently-asked">
+      <div class="questions">
+        <h3>Frequently Asked Questions</h3>
+        <ul id="buttons">
+          <li>
+            <a href="#">What is Netflix?<img src="add-outline.svg" /></a>
+          </li>
+          <li>
+            <a href="#"
+              >How much does Netflix cost?<img src="add-outline.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="#">Where can i watch?<img src="add-outline.svg" /></a>
+          </li>
+          <li>
+            <a href="#">How do i cancel?<img src="add-outline.svg" /></a>
+          </li>
+          <li>
+            <a href="#"
+              >What can i watch on Netflix?<img src="add-outline.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              >Is Netflix good for kids?<img src="add-outline.svg"
+            /></a>
+          </li>
+        </ul>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div class="lower-login">
+          <form class="input">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              value="Email Address"
+            />
+          </form>
+          <div class="start">
+            <span>Get Started <img src="chevron-forward-outline.svg" /></span>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

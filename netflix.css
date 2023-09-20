@@ -1,6 +1,11 @@
 .card-container {
   position: relative;
   margin: 0;
+  background-image: url("background netflix.jpg");
+  height: 600px;
+  background-size: cover;
+  filter: brightness(50%);
+  display: block;
 }
 body {
   padding: 0;
@@ -11,38 +16,10 @@ body {
 .body .background {
   overflow: auto;
   width: 100%;
-  height: 100%;
-  background: url("netflix background image.jpg.crdownload") no-repeat center
-    center fixed;
+
   position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
-  animation: myfirst 5s;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes myfirst {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.2;
-  }
-}
-
-/* Standard syntax */
-@keyframes myfirst {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.2;
-  }
-}
 .card-container img {
   height: 150px;
   background: none;
@@ -70,7 +47,7 @@ body {
   color: white;
   gap: 40px;
   position: absolute;
-  top: 200%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;
@@ -83,7 +60,7 @@ body {
   color: white;
 
   position: absolute;
-  top: 250%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 25px;
@@ -92,13 +69,14 @@ body {
   font-weight: 900;
   justify-content: space-around;
 }
+
 .login-area {
-  display: flex;
+  flex: display;
   flex-direction: row;
 
   color: white;
   position: absolute;
-  top: 310%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
@@ -133,4 +111,159 @@ body {
 .start img {
   height: 16px;
   align-items: left;
+}
+.enjoy-watching .tv {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: rgb(3, 3, 3);
+  color: white;
+}
+.enjoy-watching h3 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 800;
+}
+.enjoy-watching p {
+  font-size: 30px;
+}
+
+.enjoy {
+  flex-direction: column;
+  padding-left: 80px;
+  padding-top: 50px;
+  text-align: center;
+}
+.mobile-watching .mobile {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: rgb(3, 3, 3);
+  color: white;
+}
+.mobile-watching h3 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 800;
+}
+.mobile-watching p {
+  font-size: 30px;
+}
+
+.download {
+  flex-direction: column;
+  padding-right: 80px;
+  padding-top: 50px;
+  text-align: center;
+}
+.watch-everywhere .devices {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: rgb(3, 3, 3);
+  color: white;
+  padding-right: 30px;
+}
+.watch-everywhere h3 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 800;
+}
+.watch-everywhere p {
+  font-size: 30px;
+}
+
+.all-devices {
+  flex-direction: column;
+  padding-left: 80px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.netflix-kids .kids {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: rgb(3, 3, 3);
+  color: white;
+  margin: 0;
+}
+.netflix-kids h3 {
+  text-align: left;
+  font-size: 45px;
+  font-weight: 800;
+}
+.netflix-kids p {
+  font-size: 30px;
+  text-align: left;
+}
+
+.kids-adventure {
+  flex-direction: column;
+  padding-right: 80px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.questions {
+  display: block;
+  flex-direction: column;
+  font-size: 30px;
+  padding-left: 10%;
+  text-decoration: none;
+  line-height: 60px;
+  color: white;
+  justify-content: center;
+  list-style: none;
+  background-color: rgb(3, 3, 3);
+}
+.questions h3 {
+  text-align: center;
+  font-size: 60px;
+}
+#buttons li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  width: 920px;
+}
+#buttons li a:hover {
+  text-decoration: none;
+
+  background-color: #c0c5c5;
+}
+#buttons img {
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 900px;
+}
+.frequently-asked p {
+  font-size: 25px;
+  text-align: center;
+}
+.lower-login {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  font-weight: 900;
+
+  border: none;
+  box-sizing: border-box;
+  background: transparent;
+}
+.lower-login .input {
+  margin: 5px;
+  border-radius: 3px;
+  padding: 5px 5px 0 0;
+}
+.lower-login .start {
+  background-color: red;
+  border-radius: 6px;
+  border: none;
+  font-weight: 900;
+  font-size: 16px;
+  color: white;
 }
