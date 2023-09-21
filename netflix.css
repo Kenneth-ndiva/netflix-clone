@@ -6,6 +6,8 @@
   background-size: cover;
   filter: brightness(50%);
   display: block;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("background netflix.jpg");
 }
 body {
   padding: 0;
@@ -26,7 +28,8 @@ body {
   top: 10px;
   margin-left: 80px;
   margin-top: 10px;
-  color: red;
+  color: rgb(188, 5, 5);
+  filter: brightness(1.75);
 }
 
 .heading {
@@ -42,6 +45,7 @@ body {
   right: 80px;
   margin-right: 80px;
   margin-top: 40px;
+  filter: brightness(1.75);
 }
 .shows {
   color: white;
@@ -55,10 +59,11 @@ body {
   text-align: center;
   font-weight: 900;
   justify-content: space-around;
+  filter: brightness(1.75);
 }
 .subscribe {
   color: white;
-
+  filter: brightness(8.75);
   position: absolute;
   top: 65%;
   left: 50%;
@@ -71,47 +76,48 @@ body {
 }
 
 .login-area {
-  flex: display;
+  display: flex;
   flex-direction: row;
-
   color: white;
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
-
   text-align: center;
   justify-content: center;
   font-weight: 900;
 
-  border: none;
   box-sizing: border-box;
   background: transparent;
 }
-.login-area .input {
+.form .input {
   margin: 5px;
   border-radius: 3px;
-  padding: 5px 5px 0 0;
-  border-color: lightgray;
-  flex: 1;
-  font-size: 16px;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 3px;
   line-height: 16px;
-  min-width: 200px;
+  min-width: 300px;
+  border-style: solid;
+  border-color: rgb(193, 188, 183);
+  background: transparent;
+  width: 85%;
 }
-.login-area .start {
+.start {
   background-color: red;
   border-radius: 6px;
   border: none;
   font-weight: 900;
   font-size: 16px;
   color: white;
-  flex: 2;
+  padding-left: 20px;
 }
 .start img {
   height: 16px;
   align-items: left;
 }
+
 .enjoy-watching .tv {
   display: flex;
   flex-direction: row;
@@ -124,6 +130,7 @@ body {
   font-size: 45px;
   font-weight: 800;
 }
+
 .enjoy-watching p {
   font-size: 30px;
 }
@@ -187,6 +194,8 @@ body {
   background-color: rgb(3, 3, 3);
   color: white;
   margin: 0;
+  position: relative;
+  padding-bottom: 100px;
 }
 .netflix-kids h3 {
   text-align: left;
@@ -201,25 +210,30 @@ body {
 .kids-adventure {
   flex-direction: column;
   padding-right: 80px;
-  padding-top: 50px;
+
   text-align: center;
 }
 
-.questions {
-  display: block;
+.frequently-asked .questions {
+  position: inherit;
+  padding-top: 100px;
   flex-direction: column;
   font-size: 30px;
   padding-left: 10%;
   text-decoration: none;
-  line-height: 60px;
-  color: white;
+  line-height: 40px;
+  width: 100%;
   justify-content: center;
-  list-style: none;
+  margin-top: 0;
+  padding-bottom: 50px;
   background-color: rgb(3, 3, 3);
 }
 .questions h3 {
+  padding-top: 50px;
   text-align: center;
   font-size: 60px;
+  color: white;
+  background-color: black;
 }
 #buttons li a {
   text-decoration: none;
@@ -227,6 +241,7 @@ body {
   display: block;
   padding: 10px;
   width: 920px;
+  justify-content: center;
 }
 #buttons li a:hover {
   text-decoration: none;
@@ -249,7 +264,6 @@ body {
   text-align: center;
   justify-content: center;
   font-weight: 900;
-
   border: none;
   box-sizing: border-box;
   background: transparent;
@@ -257,7 +271,15 @@ body {
 .lower-login .input {
   margin: 5px;
   border-radius: 3px;
-  padding: 5px 5px 0 0;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 3px;
+  line-height: 16px;
+  min-width: 300px;
+  border-style: solid;
+  border-color: rgb(193, 188, 183);
+  background: transparent;
+  width: 40%;
 }
 .lower-login .start {
   background-color: red;
@@ -266,4 +288,43 @@ body {
   font-weight: 900;
   font-size: 16px;
   color: white;
+  padding-top: 8px;
+  width: 150px;
+}
+.start img {
+  height: 16px;
+  align-items: left;
+}
+.footing {
+  background-color: black;
+  position: absolute;
+  width: 100;
+  padding-bottom: 50px;
+}
+.footer h3 {
+  margin-left: 80px;
+  padding-top: 60px;
+}
+
+.footer a {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  justify-content: center;
+}
+.row-one {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 146px;
+  margin-right: 80px;
+  justify-items: left;
+  flex: 1;
+  float: left;
+  font-size: 15px;
+  line-height: 30px;
+  color: white;
+  background-color: black;
 }
